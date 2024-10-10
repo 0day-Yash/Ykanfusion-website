@@ -1,4 +1,4 @@
-Website/
+.
 ├── 404.html
 ├── about.html
 ├── blog-right-sidebar.html
@@ -7,7 +7,7 @@ Website/
 ├── contact.html
 ├── error-page.html
 ├── faqs.html
-├── images/
+├── images
 │   ├── arct-icon.png
 │   ├── author-image.jpg
 │   ├── banner-image-1.jpg
@@ -22,11 +22,13 @@ Website/
 │   ├── banner-large-4.jpg
 │   ├── banner-large-image1.jpg
 │   ├── banner-large-image2.jpg
-│   ├── banner-large-image.jpg
 │   ├── bg-newsletter.jpg
 │   ├── category-banner-1.jpg
 │   ├── category-banner-2.jpg
 │   ├── category-banner-3.jpg
+│   ├── colorbox
+│   │   ├── controls.html
+│   │   └── loading.html
 │   ├── commentor-item1.jpg
 │   ├── commentor-item2.jpg
 │   ├── commentor-item3.jpg
@@ -38,7 +40,6 @@ Website/
 │   ├── insta-item3.jpg
 │   ├── insta-item4.jpg
 │   ├── insta-item5.jpg
-│   ├── insta-item6.jpg
 │   ├── light-logo.png
 │   ├── logo1.png
 │   ├── logo2.png
@@ -48,7 +49,6 @@ Website/
 │   ├── main-logo.png
 │   ├── master-card.png
 │   ├── newsletter-image.jpg
-│   ├── paypal-card.png
 │   ├── product-item1.jpg
 │   ├── product-item2.jpg
 │   ├── product-item3.jpg
@@ -58,12 +58,6 @@ Website/
 │   ├── product-item7.jpg
 │   ├── product-item8.jpg
 │   ├── product-item9.jpg
-│   ├── product-item10.jpg
-│   ├── product-item11.jpg
-│   ├── product-item12.jpg
-│   ├── product-item13.jpg
-│   ├── product-item14.jpg
-│   ├── product-item15.jpg
 │   ├── product-large-1.jpg
 │   ├── product-large-2-1.jpg
 │   ├── product-large-2-2.jpg
@@ -107,10 +101,13 @@ Website/
 │   ├── review-image2.jpg
 │   ├── review-image3.jpg
 │   ├── single-image1.jpg
-│   ├── single-image-2.jpg
 │   ├── single-image2.jpg
-│   └── text-pattern.png
-├── js/
+│   ├── single-image3.jpg
+│   ├── text-pattern.png
+│   ├── two-col-banner-1.jpg
+│   ├── two-col-banner-2.jpg
+│   └── two-col-banner-3.jpg
+├── js
 │   ├── jquery.min.js
 │   ├── plugins.js
 │   ├── script.js
@@ -123,35 +120,35 @@ Website/
 ├── styles.html
 ├── style.css
 ├── wishlist.html
-├── Auth/
-│   ├── Acc/
+├── Auth
+│   ├── Acc
 │   │   ├── config.php
 │   │   └── my-account.html
-│   ├── Cart/
+│   ├── Cart
 │   │   ├── cart.html
 │   │   ├── cart.php
 │   │   └── config.php
-│   ├── Sign in/
+│   ├── Sign in
 │   │   ├── config.php
 │   │   ├── login.html
 │   │   └── login.php
-│   └── Sign up/
+│   └── Sign up
 │       ├── config.php
 │       ├── Sign-up.html
 │       └── sign-up.php
-└── Shop/
-    ├── Accessories and watches/
-    │   ├── Details/
+└── Shop
+    ├── Accessories and watches
+    │   ├── Details
     │   └── shop-sidebar.html
-    ├── Bestsellers/
-    │   ├── Details/
+    ├── Bestsellers
+    │   ├── Details
     │   └── shop-sidebar.html
-    ├── Electronics/
-    │   ├── Details/
+    ├── Electronics
+    │   ├── Details
     │   └── shop-sidebar.html
-    ├── Home Decor/
-    │   ├── Details/
+    ├── Home Decor
+    │   ├── Details
     │   └── shop-sidebar.html
-    └── Misc/
-        ├── Details/
+    └── Misc
+        ├── Details
         └── shop-sidebar.html
