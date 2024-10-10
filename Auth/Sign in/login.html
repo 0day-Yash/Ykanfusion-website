@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from demo.templatesjungle.com/kaira/my-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2024 04:59:04 GMT -->
 <head>
   <title>Kaira - Bootstrap 5 Fashion Store HTML CSS Template</title>
   <meta charset="utf-8">
@@ -428,37 +425,35 @@
       </div>
     </div>
   </section>
-
   <section id="login-form" class="py-5">
     <div class="container-sm">
-      <div class="row justify-content-center">
-        <div class="col-4">
-          <h2 class="section-title text-uppercase">Login</h2>
-          <form id="form" class="form-group flex-wrap">
-            <div class="col-12 pb-3">
-              <label>Username or email address *</label>
-              <input type="text" name="name" placeholder="Write your username / email address here"
-                class="form-control">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h2 class="section-title text-uppercase">Login</h2>
+                <form id="form" class="form-group flex-wrap" action="login.php" method="POST">
+                    <div class="col-12 pb-3">
+                        <label for="username">Username or email address *</label>
+                        <input type="text" name="username" id="username" placeholder="Write your username / email address here" class="form-control" required>
+                    </div>
+                    <div class="col-12 pb-3">
+                        <label for="password">Password *</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control" required>
+                    </div>
+                    <div class="col-12 pb-3">
+                        <label>
+                            <input type="checkbox" name="remember_me">
+                            <span class="label-body">Remember me</span>
+                        </label>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" name="submit" class="btn btn-dark btn-large text-uppercase pb-3">Log in</button>
+                        <p><a href="#">Lost your password?</a></p>
+                    </div>
+                </form>
             </div>
-            <div class="col-12 pb-3">
-              <label>Password *</label>
-              <input type="text" name="email" placeholder="Enter your password" class="form-control">
-            </div>
-            <div class="col-12 pb-3">
-              <label>
-                <input type="checkbox" required="">
-                <span class="label-body">Remember me</span>
-              </label>
-            </div>
-            <div class="col-12">
-              <button type="submit" name="submit" class="btn btn-dark btn-large text-uppercase pb-3">Log in</button>
-              <p><a href="#">Lost your password?</a></p>
-            </div>
-          </form>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
   <section class="bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">

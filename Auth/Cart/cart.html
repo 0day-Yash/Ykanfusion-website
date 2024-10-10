@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from demo.templatesjungle.com/kaira/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2024 04:59:01 GMT -->
 <head>
   <title>Kaira - Bootstrap 5 Fashion Store HTML CSS Template</title>
   <meta charset="utf-8">
@@ -393,172 +391,108 @@
       </div>
     </div>
   </section>
-
   <section class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="cart-table">
-            <div class="cart-header">
-              <div class="row d-flex">
-                <h6 class="cart-title text-uppercase text-muted col-lg-4 pb-3">Product</h6>
-                <h6 class="cart-title text-uppercase text-muted col-lg-3 pb-3">Quantity</h6>
-                <h6 class="cart-title text-uppercase text-muted col-lg-4 pb-3">Subtotal</h6>
-              </div>
-            </div>
-            <div class="cart-item border-top border-bottom">
-              <div class="row align-items-center"> 
-                <div class="col-lg-4 col-md-3">
-                  <div class="cart-info d-flex flex-wrap align-items-center mb-4">
-                    <div class="col-lg-5">
-                      <div class="card-image">
-                        <img src="images/product-thumb-11.jpg" alt="cloth" class="img-fluid">
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="card-detail ps-3">
-                        <h5 class="card-title">
-                          <a href="#" class="text-decoration-none">Iphone 13</a>
-                        </h5>
-                        <div class="card-price">
-                          <span class="money text-dark" data-currency-usd="$1200.00">$1500.00</span>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="cart-table">
+                    <div class="cart-header">
+                        <div class="row d-flex">
+                            <h6 class="cart-title text-uppercase text-muted col-lg-4 pb-3">Product</h6>
+                            <h6 class="cart-title text-uppercase text-muted col-lg-3 pb-3">Quantity</h6>
+                            <h6 class="cart-title text-uppercase text-muted col-lg-4 pb-3">Subtotal</h6>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-7">
-                  <div class="row d-flex">
-                    <div class="col-md-4">
-                      <div class="input-group product-qty">
-                        <span class="input-group-btn">
-                            <button type="button" class="quantity-left-minus btn btn-light btn-number"  data-type="minus" data-field="">
-                              <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                            </button>
-                        </span>
-                        <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100">
-                        <span class="input-group-btn">
-                            <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                            </button>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="col-md-8 text-center">
-                      <div class="total-price">
-                        <span class="money text-dark">$1500.00</span>
-                      </div>
-                    </div>   
-                  </div>             
-                </div>
-                <div class="col-lg-1 col-md-2">
-                  <div class="cart-remove">
-                    <a href="#">
-                      <svg width="32px">
-                        <use xlink:href="#trash"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item border-top border-bottom">
-              <div class="row align-items-center">
-                <div class="col-lg-4 col-md-3">
-                  <div class="cart-info d-flex flex-wrap align-items-center">
-                    <div class="col-lg-5">
-                      <div class="card-image">
-                        <img src="images/product-thumb-12.jpg" alt="product" class="img-fluid">
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="card-detail ps-3">
-                        <h5 class="card-title">
-                          <a href="#" class="text-decoration-none">Pink watch</a>
-                        </h5>
-                        <div class="card-price">
-                          <span class="money text-dark" data-currency-usd="$1200.00">$870.00</span>
+
+                    <?php foreach ($cart_items as $item): ?>
+                        <div class="cart-item border-top border-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 col-md-3">
+                                    <div class="cart-info d-flex flex-wrap align-items-center mb-4">
+                                        <div class="col-lg-5">
+                                            <div class="card-image">
+                                                <img src="<?php echo $item['image']; ?>" alt="product" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="card-detail ps-3">
+                                                <h5 class="card-title">
+                                                    <a href="#" class="text-decoration-none"><?php echo $item['name']; ?></a>
+                                                </h5>
+                                                <div class="card-price">
+                                                    <span class="money text-dark">$<?php echo number_format($item['price'], 2); ?></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7">
+                                    <div class="row d-flex">
+                                        <div class="col-md-4">
+                                            <div class="input-group product-qty">
+                                                <input type="number" id="quantity" name="quantity" class="form-control input-number text-center" value="<?php echo $item['quantity']; ?>" min="1" max="100">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 text-center">
+                                            <div class="total-price">
+                                                <span class="money text-dark">$<?php echo number_format($item['price'] * $item['quantity'], 2); ?></span>
+                                            </div>
+                                        </div>   
+                                    </div>             
+                                </div>
+                                <div class="col-lg-1 col-md-2">
+                                    <div class="cart-remove">
+                                        <a href="#">
+                                            <svg width="32px">
+                                                <use xlink:href="#trash"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cart-totals bg-grey py-5">
+                    <h4 class="text-dark pb-4">Cart Total</h4>
+                    <div class="total-price pb-5">
+                        <table cellspacing="0" class="table text-uppercase">
+                            <tbody>
+                                <tr class="subtotal pt-2 pb-2 border-top border-bottom">
+                                    <th>Subtotal</th>
+                                    <td data-title="Subtotal">
+                                        <span class="price-amount amount text-dark ps-5">
+                                            <bdi>
+                                                <span class="price-currency-symbol">$</span><?php echo number_format($subtotal, 2); ?>
+                                            </bdi>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="order-total pt-2 pb-2 border-bottom">
+                                    <th>Total</th>
+                                    <td data-title="Total">
+                                        <span class="price-amount amount text-dark ps-5">
+                                            <bdi>
+                                                <span class="price-currency-symbol">$</span><?php echo number_format($subtotal, 2); ?></bdi>
+                                            </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-7">
-                  <div class="row d-flex">
-                    <div class="col-lg-4">
-                      <div class="input-group product-qty">
-                        <span class="input-group-btn">
-                            <button type="button" class="quantity-left-minus btn btn-light btn-number"  data-type="minus" data-field="">
-                              <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                            </button>
-                        </span>
-                        <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100">
-                        <span class="input-group-btn">
-                            <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                            </button>
-                        </span>
-                      </div>
+                    <div class="button-wrap row g-2">
+                        <div class="col-md-6"><button class="btn btn-dark text-uppercase btn-rounded-none w-100">Update Cart</button></div>
+                        <div class="col-md-6"><button class="btn btn-dark text-uppercase btn-rounded-none w-100">Continue Shopping</button></div>
+                        <div class="col-md-12"><button class="btn btn-primary text-uppercase btn-rounded-none w-100">Proceed to checkout</button></div>
                     </div>
-                    <div class="col-lg-8 text-center">
-                      <div class="total-price">
-                        <span class="money text-dark">$870.00</span>
-                      </div>
-                    </div>   
-                  </div>             
                 </div>
-                <div class="col-lg-1 col-md-2">
-                  <div class="cart-remove">
-                    <a href="#">
-                      <svg width="32px">
-                        <use xlink:href="#trash"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="cart-totals bg-grey py-5">
-            <h4 class="text-dark pb-4">Cart Total</h4>
-            <div class="total-price pb-5">
-              <table cellspacing="0" class="table text-uppercase">
-                <tbody>
-                  <tr class="subtotal pt-2 pb-2 border-top border-bottom">
-                    <th>Subtotal</th>
-                    <td data-title="Subtotal">
-                      <span class="price-amount amount text-dark ps-5">
-                        <bdi>
-                          <span class="price-currency-symbol">$</span>2,370.00
-                        </bdi>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr class="order-total pt-2 pb-2 border-bottom">
-                    <th>Total</th>
-                    <td data-title="Total">
-                      <span class="price-amount amount text-dark ps-5">
-                        <bdi>
-                          <span class="price-currency-symbol">$</span>2,370.00</bdi>
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="button-wrap row g-2">
-              <div class="col-md-6"><button class="btn btn-dark text-uppercase btn-rounded-none w-100">Update Cart</button></div>
-              <div class="col-md-6"><button class="btn btn-dark text-uppercase btn-rounded-none w-100">Continue Shopping</button></div>
-              <div class="col-md-12"><button class="btn btn-primary text-uppercase btn-rounded-none w-100">Proceed to checkout</button></div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
     </div>
-  </section> 
+</section>
+
 
   <section class="bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">
