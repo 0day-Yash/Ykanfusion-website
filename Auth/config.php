@@ -1,16 +1,14 @@
 <?php
-$servername = "sql209.infinityfree.com"; 
-$username = "if0_37485959"; 
-$password = "iZ41YQh6kxjkRsB"; 
-$dbname = "if0_37485959_Main"; 
+$host = "bfp2yc5kz9yhcwjpz4km-mysql.services.clever-cloud.com";
+$user = "u5z0l9iahtbtlqp7";
+$password = "iayHl1FIVgK1QAAExAFJ";
+$dbname = "bfp2yc5kz9yhcwjpz4km";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $user, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-// Uncomment the line below for debugging purposes
-// echo "Connected successfully";
 ?>
