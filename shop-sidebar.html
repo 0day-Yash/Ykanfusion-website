@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Kaira - Bootstrap 5 Fashion Store HTML CSS Template</title>
+  <title>Y-Kanfusion | Featured</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -342,7 +342,7 @@
             <nav class="breadcrumb text-white">
               <a class="breadcrumb-item" href="#">Home</a>
               <a class="breadcrumb-item" href="#">Pages</a>
-              <span class="breadcrumb-item active" aria-current="page">Shop Right Sidebar</span>
+              <span class="breadcrumb-item active" aria-current="page">Shop Featured</span>
             </nav>
           </div>
         </div>
@@ -368,24 +368,29 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 mb-3 product-item link-effect">
+
+
+            <div class="col-md-4 mb-3 product-item">
               <div class="image-holder position-relative">
                 <a href="single-product.html">
-                  <img src="images/product-thumb-1.jpg" alt="categories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#heart"></use>
-                  </svg>
+                  <img src="images/product-thumb-1.jpg" alt="Dark florish onepiece" class="product-image img-fluid">
                 </a>
                 <div class="product-content">
-                  <h5 class="element-title text-uppercase fs-5 mt-3">
-                    <a href="single-product.html">Dark florish onepiece</a>
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="single-product.html">Gooseneck LED Study/Desk Table Lamp</a>
                   </h5>
-                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>$95.00</span></a>
+                  <!-- Add to Cart Button -->
+                  <a href="#" class="text-uppercase fs-5 mt-3" data-after="Add to cart"><span>120 INR</span></a>
+                  <form method="post" action="add-to-cart.php">
+                    <input type="hidden" name="product_id" value="product-1">
+                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                  </form>
                 </div>
               </div>
             </div>
+
+
+
             <div class="col-md-4 mb-3 product-item link-effect">
               <div class="image-holder position-relative">
                 <a href="single-product.html">

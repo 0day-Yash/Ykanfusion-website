@@ -347,12 +347,13 @@
     </div>
   </section>
 
-  <section id="signup-form" class="py-5">
+ <section id="signup-form" class="py-5">
     <div class="container-sm">
         <div class="row justify-content-center">
             <div class="col-4">
                 <h2 class="section-title text-uppercase">Sign Up</h2>
-                <form id="form" class="form-group flex-wrap" action="sign-up.php" method="POST">
+                <!-- The merged sign-up form -->
+                <form id="form" class="form-group flex-wrap" action="signup.php" method="POST">
                     <div class="col-12 pb-3">
                         <label>Username *</label>
                         <input type="text" name="username" placeholder="Choose a username" class="form-control" required>
@@ -377,13 +378,14 @@
                     </div>
                     <div class="col-12">
                         <button type="submit" name="submit" class="btn btn-dark btn-large text-uppercase pb-3">Sign Up</button>
-                        <p>Already have an account? <a href="#">Log in</a></p>
+                        <p>Already have an account? <a href="login.php">Log in</a></p>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
 
 
   <section class="bg-light" style="background: url(images/pattern-bg.png) no-repeat;">

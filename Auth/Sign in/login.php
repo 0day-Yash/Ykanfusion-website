@@ -1,31 +1,34 @@
 <?php
-session_start();
-include 'config.php'; // Include the database connection
+session_start();  // Start the session
+include('config.php');  // Include the database connection
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $usernameOrEmail = $_POST['username']; // Change this to match your input name
+if (isset($_POST['submit'])) {
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = $_POST['password'];
 
-    // Check if the user exists by either username or email
-    $query = "SELECT * FROM users WHERE username = ? OR email = ?";
-    $stmt = $conn->prepare($query);
-    $stmt->bind_param("ss", $usernameOrEmail, $usernameOrEmail); // Bind both parameters
-    $stmt->execute();
-    $result = $stmt->get_result();
+    // Retrieve the user from the database
+    $sql = "SELECT * FROM users WHERE email='$email' LIMIT 1";
+    $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        // Verify the password
+
+        // Verify the hashed password
         if (password_verify($password, $user['password'])) {
-            $_SESSION['user_id'] = $user['id']; // Store user ID in session
-            // Redirect or display success message
-            header("Location: welcome.php"); // Change this to your desired page
-            exit();
+            // Password is correct, log the user in
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+            echo "Login successful! Welcome, " . $user['username'];
+            // Redirect to a dashboard or home page
+            header('Location: dashboard.php');
+            exit;
         } else {
-            echo "Invalid password!";
+            // Invalid password
+            echo "Invalid email or password!";
         }
     } else {
-        echo "No user found with that username or email!";
+        // No user found with that email
+        echo "Invalid email or password!";
     }
 }
 ?>
