@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
-<!-- Mirrored from demo.templatesjungle.com/kaira/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2024 04:59:03 GMT -->
 <head>
-  <title>Kaira - Bootstrap 5 Fashion Store HTML CSS Template</title>
+  <title>Y-KanFusion</title>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2ZR5BNR7C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R2ZR5BNR7C');
+</script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="author" content="TemplatesJungle">
+  <meta name="author" content="Yash Kulkarni">
   <meta name="keywords" content="ecommerce,fashion,store">
-  <meta name="description" content="Bootstrap 5 Fashion Store HTML CSS Template">
-
+  <meta name="description" content="The best store for all your needs.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script><script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function(){
+          emailjs.init('P-ChfvvcFJXyTCMq1'); // Your public key
+      })();
+  </script>
+
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -121,7 +136,7 @@
   <div class="search-popup">
     <div class="search-popup-container">
 
-      <form role="search" method="get" class="form-group" action="https://demo.templatesjungle.com/kaira/index.html">
+      <form role="search" method="get" class="form-group" action="#">
         <input type="search" id="search-form" class="form-control border-0 border-bottom" placeholder="Type and press enter" value="" name="s" />
         <button type="submit" class="search-submit border-0 position-absolute bg-white" style="top: 15px;right: 15px;"><svg class="search" width="24" height="24"><use xlink:href="#search"></use></svg></button>
       </form>
@@ -130,80 +145,32 @@
       
       <ul class="cat-list">
         <li class="cat-list-item">
-          <a href="#" title="Jackets">Jackets</a>
+          <a href="#" title="Wallets">Wallets</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="T-shirts">T-shirts</a>
+          <a href="#" title="Watches">Watches</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="Handbags">Handbags</a>
+          <a href="#" title="Table Fans">Table Fans</a>
         </li>
         <li class="cat-list-item">
           <a href="#" title="Accessories">Accessories</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="Cosmetics">Cosmetics</a>
+          <a href="#" title="Sofa">Sofas</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="Dresses">Dresses</a>
+          <a href="#" title="Furniture">Furniture</a>
         </li>
-        <li class="cat-list-item">
-          <a href="#" title="Jumpsuits">Jumpsuits</a>
-        </li>
-      </ul>
-
     </div>
   </div>
 
-  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart">
-    <div class="offcanvas-header justify-content-center">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
-          <span class="text-primary">Your cart</span>
-          <span class="badge bg-primary rounded-pill">3</span>
-        </h4>
-        <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Growers cider</h6>
-              <small class="text-body-secondary">Brief description</small>
-            </div>
-            <span class="text-body-secondary">$12</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Fresh grapes</h6>
-              <small class="text-body-secondary">Brief description</small>
-            </div>
-            <span class="text-body-secondary">$8</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Heinz tomato ketchup</h6>
-              <small class="text-body-secondary">Brief description</small>
-            </div>
-            <span class="text-body-secondary">$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
-            <strong>$20</strong>
-          </li>
-        </ul>
-
-        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-lg text-uppercase fs-6 p-3 border-bottom align-items-center">
+  <nav class="navbar navbar-expand-lg navbar-light text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center w-100">
 
         <div class="col-auto">
-          <a class="navbar-brand" href="index-2.html"><img src="images/main-logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a>
         </div>
 
         <div class="col-auto">
@@ -220,117 +187,37 @@
 
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Home</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
-                    <li>
-                      <a href="index-2.html" class="dropdown-item item-anchor">Home Layout 1</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li>
-                      <a href="home2.html" class="dropdown-item item-anchor">Home Layout 2 <span class="badge bg-primary">PRO</span></a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop-sidebar.html">Shop</a>
                     </li>
-                    <li>
-                      <a href="home3.html" class="dropdown-item item-anchor">Home Layout 3 <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="home4.html" class="dropdown-item item-anchor">Home Layout 4 <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownShop" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Shop</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
-                    <li>
-                      <a href="shop-sidebar.html" class="dropdown-item item-anchor">Shop Sidebar <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-three-column.html" class="dropdown-item item-anchor">Shop Three Column <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-three-column-wide.html" class="dropdown-item item-anchor">Shop Three Column Wide <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-four-column.html" class="dropdown-item item-anchor">Shop Four Column <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-four-column-wide.html" class="dropdown-item item-anchor">Shop Four Column Wide <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-six-column.html" class="dropdown-item item-anchor">Shop Six Column <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-six-column-wide.html" class="dropdown-item item-anchor">Shop Six Column Wide <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="single-product.html" class="dropdown-item item-anchor">Single Product <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="single-product2.html" class="dropdown-item item-anchor">Single Product V2 <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Blog</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
-                    <li>
-                      <a href="blog-classic.html" class="dropdown-item item-anchor">Blog Classic <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="blog-grid-with-sidebar.html" class="dropdown-item item-anchor">Blog Grid with Sidebar <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="blog-grid-four-column.html" class="dropdown-item item-anchor">Blog Grid Four Column <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="blog-no-sidebar.html" class="dropdown-item item-anchor">Blog No Sidebar <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="blog-right-sidebar.html" class="dropdown-item item-anchor">Blog Right Sidebar <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="single-post.html" class="dropdown-item item-anchor">Single Post <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="single-post-no-sidebar.html" class="dropdown-item item-anchor">Single Post No Sidebar <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                  </ul>
-                </li>
+                
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Pages</a>
                   <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
                     <li>
-                      <a href="about.html" class="dropdown-item item-anchor">About <span class="badge bg-primary">PRO</span></a>
+                      <a href="about.html" class="dropdown-item item-anchor">About us</a>
                     </li>
                     <li>
-                      <a href="cart.html" class="dropdown-item item-anchor">Cart <span class="badge bg-primary">PRO</span></a>
+                      <a href="Auth/Cart/cart.html" class="dropdown-item item-anchor">Cart</a>
                     </li>
                     <li>
-                      <a href="checkout.html" class="dropdown-item item-anchor">Checkout <span class="badge bg-primary">PRO</span></a>
+                      <a href="contact.html" class="dropdown-item item-anchor">Contact </a>
                     </li>
                     <li>
-                      <a href="coming-soon.html" class="dropdown-item item-anchor">Coming Soon <span class="badge bg-primary">PRO</span></a>
+                      <a href="faqs.html" class="dropdown-item item-anchor">FAQs </a>
                     </li>
                     <li>
-                      <a href="contact.html" class="dropdown-item item-anchor">Contact <span class="badge bg-primary">PRO</span></a>
+                      <a href="Auth/Acc/my-account.html" class="dropdown-item item-anchor">My Account </a>
                     </li>
                     <li>
-                      <a href="error-page.html" class="dropdown-item item-anchor">Error Page <span class="badge bg-primary">PRO</span></a>
+                      <a href="order-tracking.html" class="dropdown-item item-anchor">Order Tracking </a>
                     </li>
                     <li>
-                      <a href="faqs.html" class="dropdown-item item-anchor">FAQs <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="my-account.html" class="dropdown-item item-anchor">My Account <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="order-tracking.html" class="dropdown-item item-anchor">Order Tracking <span class="badge bg-primary">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="wishlist.html" class="dropdown-item item-anchor">Wishlist <span class="badge bg-primary">PRO</span></a>
+                      <a href="wishlist.html" class="dropdown-item item-anchor">Wishlist </a>
                     </li>
                   </ul>
                 </li>
@@ -341,7 +228,7 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-outline-primary rounded-pill" href="https://templatesjungle.gumroad.com/l/kaira-bootstrap-ecommerce-template" target="_blank">Get PRO</a>
+                  <a class="btn btn-outline-primary rounded-pill" href="Auth/Sign in/login.html" target="_self">Sign In</a>
                 </li>
               </ul>
             </div>
@@ -351,11 +238,11 @@
         <div class="col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
             <li class="d-none d-lg-block">
-              <a href="wishlist.html" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(0)</span>
+              <a href="wishlist.html" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(x)</span>
               </a>
             </li>
             <li class="d-none d-lg-block">
-              <a href="cart.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span>
+              <a href="Auth/Cart/cart.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span>
               </a>
             </li>
             <li class="d-lg-none">
@@ -375,193 +262,122 @@
             </li>
           </ul>
         </div>
+      
       </div>
+
     </div>
   </nav>
 
   <section class="py-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <h1 class="page-title pb-2">Checkout</h1>
+        <h1 class="page-title pb-2">Contact us</h1>
         <nav class="breadcrumb fs-6">
           <a class="breadcrumb-item nav-link" href="#">Home</a>
           <a class="breadcrumb-item nav-link" href="#">Pages</a>
-          <span class="breadcrumb-item active" aria-current="page">Checkout</span>
+          <span class="breadcrumb-item active" aria-current="page">Contact us.</span>
         </nav>
       </div>
     </div>
   </section>
-
   <section class="contact-us-wrap py-5">
     <div class="container">
-      <div class="row">
-        <div class="contact-info col-md-6">
-          <h2 class="fs-3 text-uppercase">Contact information</h2>
-          <p>Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.</p>
-          <div class="page-content">
-            <div class="col-md-6">
-              <div class="content-box">
-                <h5 class="element-title text-uppercase">Head Office</h5>
-                <div class="contact-address">
-                  <p>730 Glenstone Ave 65802, Springfield, US</p>
+        <div class="row g-4">
+            <!-- Contact Information Section -->
+            <div class="contact-info col-md-6">
+                <h3 class="fs-4 text-uppercase mb-4">Our Contacts</h3>
+                <div class="content-box mb-4">
+                    <h5 class="text-uppercase">Head Office</h5>
+                    <p>
+                        <a href="tel:+917022030333" class="text-dark">+91 7022030333</a><br>
+                        <a href="mailto:ykanfusion.24@gmail.com" class="text-dark">ykanfusion.24@gmail.com</a>
+                    </p>
                 </div>
-                <div class="contact-number">
-                  <p>
-                    <a href="#">+123 987 321</a>
-                    <a href="#">+123 123 654</a>
-                  </p>
+                <div class="content-box mb-4">
+                    <h5 class="text-uppercase">Managing Office (WhatsApp)</h5>
+                    <p>
+                        <a href="https://api.whatsapp.com/send?phone=917022030333" class="text-dark">+91 7022030333</a>
+                    </p>
                 </div>
-                <div class="email-address">
-                  <p>
-                    <a href="#">kaira@templatesjungle.com</a>
-                  </p>
+                <div class="content-box mb-4">
+                    <h5 class="text-uppercase">Report bugs and vuln disclosure.</h5>
+                    <p>
+                        <a href="tel:+919915181929" class="text-dark">+91 99151 81929</a><br>
+                        <a href="mailto:yash@yashk.app" class="text-dark">yash@yashk.app</a><br>
+                        <a href="mailto:yashkulkarni2008@gmail.com" class="text-dark">yashkulkarni2008@gmail.com</a>
+                    </p>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="content-box">
-                <h5 class="element-title text-uppercase">Branch Office</h5>
-                <div class="contact-address">
-                  <p>730 Glenstone Ave 65802, Springfield, US</p>
+                <div class="content-box">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <a href="https://www.instagram.com/y.kanfusionin/" class="text-secondary" title="Instagram">
+                      <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#instagram"></use></svg>
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
                 </div>
-                <div class="contact-number">
-                  <p>
-                    <a href="#">+123 987 321</a>
-                    <a href="#">+123 123 654</a>
-                  </p>
-                </div>
-                <div class="email-address">
-                  <p>
-                    <a href="#">contact@yourcompany.com</a>
-                  </p>
-                </div>
-              </div>
             </div>
-            <div class="col-md-6">
-              <div class="content-box">
-                <h5 class="element-title text-uppercase">Social info</h5>
-                <div class="social-links">
-                  <ul class="list-unstyled d-flex flex-wrap gap-3">
-                    <li>
-                      <a href="#" class="text-secondary">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#facebook"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-secondary">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#twitter"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-secondary">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#youtube"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-secondary">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#pinterest"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-secondary">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#instagram"></use></svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="inquiry-item col-md-6">
-          <h2 class="fs-3 text-uppercase">Got any questions?</h2>
-          <p>Use the form below to get in touch with us.</p>
-          <form id="form" class="form-group flex-wrap">
-            <div class="form-input col-lg-12 d-flex mb-3">
-              <input type="text" name="email" placeholder="Write Your Name Here" class="form-control ps-3 me-3">
-              <input type="text" name="email" placeholder="Write Your Email Here" class="form-control ps-3">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <input type="text" name="email" placeholder="Phone Number" class="form-control ps-3">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <input type="text" name="email" placeholder="Write Your Subject Here" class="form-control ps-3">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <textarea placeholder="Write Your Message Here" class="form-control ps-3" rows="8"></textarea>
-            </div>
-            <div class="d-grid">
-              <button class="btn btn-primary btn-lg text-uppercase btn-rounded-none">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="contact-list py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="content-box">
-            <h5 class="element-title text-uppercase">USA</h5>
-            <div class="contact-address">
-              <p>730 Glenstone Ave 65802, Springfield, US</p>
+            <!-- Inquiry Form Section -->
+            <div class="inquiry-item col-md-6">
+                <h3 class="fs-4 text-uppercase mb-4">Questions?</h3>
+                <p class="text-muted mb-4">Reach out to us via the form below.</p>
+                <form id="form" class="form-group" onsubmit="sendEmail(event)">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <input type="text" name="name" placeholder="Your Name" class="form-control ps-3" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" name="email" placeholder="Your Email" class="form-control ps-3" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="phone" placeholder="Phone Number" class="form-control ps-3">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="subject" placeholder="Subject" class="form-control ps-3" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" placeholder="Your Message" class="form-control ps-3" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
             </div>
-            <div class="contact-number">
-              <p>
-                <a href="#">+123 987 321</a>
-                <a href="#">+123 123 654</a>
-              </p>
-            </div>
-            <div class="email-address">
-              <p>
-                <a href="#">kaira@templatesjungle.com</a>
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="content-box">
-            <h5 class="element-title text-uppercase">France</h5>
-            <div class="contact-address">
-              <p>13 Rue Montmartre 75001, Paris, France</p>
-            </div>
-            <div class="contact-number">
-              <p>
-                <a href="#">+123 987 321</a>
-                <a href="#">+123 123 654</a>
-              </p>
-            </div>
-            <div class="email-address">
-              <p>
-                <a href="#">kaira@templatesjungle.com</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="content-box">
-            <h5 class="element-title text-uppercase">Office</h5>
-            <div class="contact-address">
-              <p>18 Chapel Brow PR25 3NE, Leyland, UK</p>
-            </div>
-            <div class="contact-number">
-              <p>
-                <a href="#">+123 987 321</a>
-                <a href="#">+123 123 654</a>
-              </p>
-            </div>
-            <div class="email-address">
-              <p>
-                <a href="#">kaira@templatesjungle.com</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+
+<!-- Include EmailJS script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init('P-ChfvvcFJXyTCMq1');
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault();
+        
+        const form = document.getElementById('form');
+        const formData = {
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            subject: form.subject.value,
+            message: form.message.value
+        };
+        
+        emailjs.send('service_0vkav4c', 'template_i8cb9x4', formData)
+            .then(() => {
+                alert('Your message has been sent successfully!');
+                form.reset();
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+                alert('An error occurred. Please try again later.');
+            });
+    }
+</script>
+
+
+  
 
   <section class="bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">
@@ -579,48 +395,78 @@
     </div>
   </section>
   
+  <section class="logo-bar py-5">
+    <div class="container">
+      <div class="row">
+        <div class="logo-content d-flex flex-wrap justify-content-between">
+          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase">Sign Up for our newsletter</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Your Email Address" class="form-control form-control-lg">
+            <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="instagram py-5">
     <div class="container">
       <div class="row g-3">
         <h6 class="element-title text-center">Follow us on Instagram</h6>
         <div class="col-6 col-sm-4 col-md-2">
           <div class="insta-item">
-            <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <a href="https://www.instagram.com/y.kanfusionin/" target="_blank">
               <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
             </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md-2">
           <div class="insta-item">
-            <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <a href="https://www.instagram.com/y.kanfusionin/" target="_blank">
               <img src="images/insta-item2.jpg" alt="instagram" class="insta-image img-fluid">
             </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md-2">
           <div class="insta-item">
-            <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <a href="https://www.instagram.com/y.kanfusionin/" target="_blank">
               <img src="images/insta-item3.jpg" alt="instagram" class="insta-image img-fluid">
             </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md-2">
           <div class="insta-item">
-            <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <a href="https://www.instagram.com/y.kanfusionin/" target="_blank">
               <img src="images/insta-item4.jpg" alt="instagram" class="insta-image img-fluid">
             </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md-2">
           <div class="insta-item">
-            <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <a href="https://www.instagram.com/y.kanfusionin/" target="_blank">
               <img src="images/insta-item5.jpg" alt="instagram" class="insta-image img-fluid">
             </a>
           </div>
         </div>
         <div class="col-6 col-sm-4 col-md-2">
           <div class="insta-item">
-            <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <a href="https://www.instagram.com/y.kanfusionin/" target="_blank">
               <img src="images/insta-item6.jpg" alt="instagram" class="insta-image img-fluid">
             </a>
           </div>
@@ -635,11 +481,12 @@
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-001">
             <div class="footer-intro mb-4">
-              <a href="index-2.html">
+              <a href="index.html">
                 <img src="images/main-logo.png" alt="logo">
               </a>
             </div>
-            <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
+            <p>At Y-Kanfusion, we create exceptional experiences through quality and style, offering the perfect products to elevate your everyday life.
+            </p>
             <div class="social-links">
               <ul class="list-unstyled d-flex flex-wrap gap-3">
                 <li>
@@ -676,10 +523,10 @@
             <h5 class="widget-title text-uppercase mb-4">Quick Links</h5>
             <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
               <li class="menu-item">
-                <a href="index-2.html" class="item-anchor">Home</a>
+                <a href="index.html" class="item-anchor">Home</a>
               </li>
               <li class="menu-item">
-                <a href="shop-four-column-wide.html" class="item-anchor">About</a>
+                <a href="about.html" class="item-anchor">About</a>
               </li>
               <li class="menu-item">
                 <a href="blog.html" class="item-anchor">Services</a>
@@ -710,10 +557,10 @@
                 <a href="#" class="item-anchor">Contact Us</a>
               </li>
               <li class="menu-item">
-                <a href="#" class="item-anchor">Find us easy</a>
+                <a href="#" class="item-anchor">Find us</a>
               </li>
               <li class="menu-item">
-                <a href="faqs.html" class="item-anchor">Faqs</a>
+                <a href="faqs.html" class="item-anchor">FAQs</a>
               </li>
             </ul>
           </div>
@@ -721,8 +568,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="footer-menu footer-menu-004 border-animation-left">
             <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
-            <p>Do you have any questions or suggestions? <a href="mailto:contact@yourcompany.com" class="item-anchor">contact@yourcompany.com</a></p>
-            <p>Do you need support? Give us a call. <a href="tel:+43720115278" class="item-anchor">+43 720 115 278</a>
+            <p>Do you have any questions or suggestions? <a href="mailto:y.kanfusion24@gmail.com" class="item-anchor">y.kanfusion24@gmail.com</a></p>
+            <p>Do you need support? Give us a call. <a href="tel:+917022030333" class="item-anchor">+91 7022030333</a>
             </p>
           </div>
         </div>
@@ -738,14 +585,14 @@
               <img src="images/dhl-logo.png" alt="icon">
             </div>
             <div class="payment-option">
-              <span>Payment Option:</span>
+              <span>Payment Options:</span>
               <img src="images/visa-card.png" alt="card">
               <img src="images/paypal-card.png" alt="card">
               <img src="images/master-card.png" alt="card">
             </div>
           </div>
           <div class="col-md-6 text-end">
-            <p>© Copyright 2022 Kaira. All rights reserved. Design by <a href="https://templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
+            <p>© Copyright 2025 Y-Kanfusion. All rights reserved. Design by <a href="https://yashk.app/" target="_blank">Yash Kulkarni</a></p>
           </div>
         </div>
       </div>
@@ -757,7 +604,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
-</body>
 
-<!-- Mirrored from demo.templatesjungle.com/kaira/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2024 04:59:03 GMT -->
+  <script>
+  var heroSwiper = new Swiper('#hero-slider', {
+    autoplay: {
+      delay: 5000, // 5 seconds
+    },
+    loop: true, // Loop the hero slider
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.icon-arrow-right',
+      prevEl: '.icon-arrow-left',
+    },
+  });
+</script>
+
+  
+</body>
 </html>
