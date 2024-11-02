@@ -18,19 +18,17 @@
 │   └── add-to-wishlist.php
 ├── Website.code-workspace
 ├── about.html
-├── android_source.tar.gz
 ├── app-bundle-ykanfusion.aab
 ├── app-release-ykanfusion-v1.2.apk
-├── backblue.gif
 ├── blog-right-sidebar.html
 ├── checkout.html
 ├── coming-soon.html
 ├── contact.html
 ├── css
 │   └── vendor.css
+├── desktop.ini
 ├── directory-map.txt
 ├── error-page.html
-├── fade.gif
 ├── faqs.html
 ├── images
 │   ├── arct-icon.png
@@ -177,7 +175,6 @@
 ├── install
 │   ├── busy-timing-311644.framer.app
 │   └── framerusercontent.com
-├── ios_source.tar.gz
 ├── js
 │   ├── SmoothScroll.js
 │   ├── jquery.min.js
@@ -192,4 +189,4 @@
 ├── styles.html
 └── wishlist.html
 
-18 directories, 174 files
+18 directories, 171 files
