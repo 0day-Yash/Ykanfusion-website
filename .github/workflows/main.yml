@@ -1,0 +1,32 @@
+name: Generate Directory Map
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install tree
+        run: sudo apt-get install -y tree
+
+      - name: Generate directory map
+        run: tree -L 2 > directory-map.txt
+
+      - name: Commit and push directory map
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add directory-map.txt
+          git commit -m "Update directory map"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
