@@ -12,12 +12,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install tree
         run: sudo apt-get install -y tree
 
       - name: Generate directory map
-        run: tree -L 4 > directory-map.txt
+        run: tree -L 2 > directory-map.txt
 
       - name: Commit and push directory map
         run: |
