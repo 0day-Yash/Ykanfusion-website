@@ -18,7 +18,6 @@
 │   └── add-to-wishlist.php
 ├── Website.code-workspace
 ├── about.html
-├── app-bundle-ykanfusion.aab
 ├── app-release-ykanfusion-v1.2.apk
 ├── blog-right-sidebar.html
 ├── checkout.html
@@ -26,7 +25,6 @@
 ├── contact.html
 ├── css
 │   └── vendor.css
-├── desktop.ini
 ├── directory-map.txt
 ├── error-page.html
 ├── faqs.html
@@ -189,4 +187,4 @@
 ├── styles.html
 └── wishlist.html
 
-18 directories, 171 files
+18 directories, 169 files
